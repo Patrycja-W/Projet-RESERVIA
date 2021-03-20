@@ -16,8 +16,8 @@ body
 }
  header , main
  {
-    padding-left: 300px;
-    padding-right: 300px;
+    width: 1140px;
+    margin: auto;
  }
 
 
@@ -395,7 +395,7 @@ body
 .activités
 {
     background-color: white;
-    width: 290px;
+    width: 250px;
     height: 500px;
     border-radius: 30px;
     overflow: hidden;
@@ -448,7 +448,7 @@ body
 .activités2
 {
     background-color: white;
-    width: 290px;
+    width: 280px;
     height: 230px;
     border-radius: 30px;
     overflow: hidden;
@@ -535,3 +535,110 @@ footer
 {
     color:black
 }
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1140px)
+{
+    header, main 
+    {
+        width: 100%;
+    }
+}
+
+
+@media all and (min-width: 600px) and (max-width: 1024px)
+{
+   
+    .container-hebergement-populaires
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-hebergement
+    {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .hebergement
+    {
+        margin-left: 15px
+    }
+    .container-populaires
+    {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        margin-top: 40px;
+    }
+    .hotelspopulaires
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .populaires
+    {
+        width: 250px;
+        margin: auto;
+    }
+    .toutesactivités
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .deux-ensemble
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .activités
+    {
+        margin: 20px;
+        height: 230px;
+        margin-right: 0px;
+    }
+    .activités .imgactivité
+    {
+        height: 74%;
+    }
+    .activités2
+    {
+        margin: 20px;
+    }
+    .container-footer
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .container-footer ul 
+    {
+        margin-right: 10px;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 600px)
+{
+    .container-hebergement-populaires
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .container-hebergement
+    {
+        background-color: white;
+    }
+    .populaires
+    {
+        width: 400px;
+    }
+    .hebergement
+    {
+        width: 400px;
+    }
+} 
