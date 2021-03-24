@@ -91,12 +91,35 @@
 
 @media all and (max-width: 600px)
 {
+    .imagelogo
+    {
+        position: relative;
+        top: 22px;
+        right: -20px;
+    }
+    body 
+    {
+        margin: 0;
+    }
     header 
     {
-        padding: 15px;
+        padding: 0;
         width: revert;
     }
     
+    .nav 
+    {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .nav ul 
+    {
+        display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    }
     .navigation
     {
         margin-top: 0;
@@ -128,7 +151,18 @@
     {
         font-size: 20px;
         max-width: 312px;
-        padding-bottom: inherit;
+        padding-left: 20px
+    }
+
+    .title2
+    {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    
+    .wrap 
+    {
+        padding-left: 20px;
     }
     .search-mini
     {
@@ -166,12 +200,14 @@
    {
        max-width: 320px;
        font-size: 14px;
+       padding-left: 20px;
    }
 
     /*filtres*/
     .filtres
     {
         display: inline-block;
+        padding-left: 20px;
     }
     .filtre-romantique
     {
@@ -250,6 +286,7 @@
 
         padding: 10px;
         width: -webkit-fill-available;
+        display: grid;
     }
     .bloc-activites
     {
