@@ -89,6 +89,22 @@
     }
 }
 
+@media all and (min-width: 600px) and (max-width: 930px)
+{
+    .card-activite
+    {
+        margin: 0;
+        width: 580px;
+    }
+
+    .card-activite .img-activite
+    {
+        background-position: center center
+    }
+
+
+}
+
 @media all and (max-width: 600px)
 {
     .imagelogo
@@ -156,10 +172,27 @@
         margin-right: 0;
     }
 
+    .nav-hebergement a:hover
+{
+    border-top: none;
 
+}
 
+.nav-activites a:hover
+{
+    border-top: none;
+   
+}
 
+.nav-hebergement:hover
+{
+    border-bottom: #0065FC 3px solid;
+}
 
+.nav-activites:hover
+{
+    border-bottom: #0065FC 3px solid;
+}
 
     .title1 
     {
@@ -182,14 +215,16 @@
     {
         display: flex;
         height: 42px;
+        width: 14%;
         border: 1px solid #0065FC;
         background:  #0065FC;
         text-align: center;
         color: #fff;
-        border-radius: 7px;
+        border-radius: 9px;
         cursor: pointer;
         font-size: 15px;
         align-items: center;
+        justify-content: center
     }
     .searchButton
     {
@@ -199,7 +234,7 @@
     .searchTerm 
     {
         height: 30px;
-        width: auto;
+        width: 70%;
 
     }
     .maps 
@@ -247,27 +282,28 @@
     {
         background-color: white;
         flex-flow: column;
-        width: -webkit-fill-available;
-        padding: 10px;
+        width: 100%;
+        padding: 0;
     }
      
     .card-hebergement
     {
-        width: 400px;
-        height: 175px;
-        margin-bottom: 15px;
-        box-shadow: 0 3px 10px -3px #7e7e7e
+        box-shadow: 0 3px 10px -3px #7e7e7e;
+        width: 340px;
+        height: 200px;
+        margin-bottom: 25px;
     }
 
     .titre-hebergement
     {
-        margin-left: 0;
-        ;
+        margin-left: 15px;
+        margin-bottom: 20px;
     }
 
     .afficher-plus
     {
-        margin-left: 0;
+        margin-left: 15px;
+        margin-top: 5px;
     }
 
     .card-hebergement h3
@@ -283,8 +319,8 @@
         display: flex;
         flex-flow: column;
         inline-size: fit-content;
-        width: -webkit-fill-available;
-        padding: 10px;
+        width: 100%;
+        padding: 0;
         margin-top: 0;
         border-radius: 0;
     }
@@ -298,8 +334,8 @@
     .container-activites
     {
 
-        padding: 10px;
-        width: -webkit-fill-available;
+        padding: 0;
+        width: 100%;
         display: grid;
     }
     .bloc-activites
@@ -339,6 +375,7 @@
     }
 
     /* Footer */
+  
     .container-footer
     {
         flex-direction: column;
