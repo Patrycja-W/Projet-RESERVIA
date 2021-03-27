@@ -113,7 +113,7 @@ header , main
 .searchButton 
 {
   height: 32px;
-  border: 1px solid #0065fcfa;
+  border: 2px solid #0065fcfa;
   background:  #0065FC;
   text-align: center;
   color: #fff;
@@ -181,6 +181,7 @@ header , main
 {
     color: #0065FC;
     background-color: #DEEBFF;
+    border: 2px solid #deebfff8;
     border-radius: 50%;
     height: 30px;
     width: 30px;
